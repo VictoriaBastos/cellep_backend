@@ -1,38 +1,16 @@
-<!DOCTYPE html>
-<html lang="pt-br" class="h-100">
-    <!-- h-100 -->
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site de Tecnologia</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/script.js" defer></script>
-    <!-- Defer faz com que o JS rode depois da leitura completa do HTML. Se estiver no final do body, o JS não precisa de defer -->
-</head>
-<body class="d-flex flex-column h-100">
-    <header class="container-fluid bg-dark sticky-top">
-        <nav class='d-flex justify-content-between flex-column flex-sm-row flex-wrap justify-content-center align-items-center'>
-            <div>
-                <img src="./img/logo_branca.svg" alt="logo">
-            </div>
-            <div>
-                <ul class="nv nav-pills ">
-                    <!-- (li>a)*3 -->
-                    <li><a class="nav-link text-white" href="/">Home</a></li>
-                    <li><a class="nav-link text-white"  href="/noticias">Notícias</a></li>
-                    <li><a class="nav-link text-white" href="/admin">Admin</a></li>
-                </ul>
-            </div>
-            <div>
-                <!-- div vazia para centralizar elementos com classe do bootstrap -->
-            </div>
-        </nav>
- </header>
+<!-- inclui arquivos comuns da pasta common-->
 
-    <footer class="mt-auto bg-dark">
-        <p class="fst-italic text-center text-white py-2 mb-0">Cel.lep Tech Notícias 2021</p>
-    </footer>
-</body>
-</html>
+<%- include('../common/head') %>
+<%- include('../common/menu') %>
+
+<main class="mb-4">
+    <div class="bg-light p-5 mb-4">
+        <div class="container text-center">
+            <h1>Seja Bem Vindo</h1>
+                <p class="lead">
+                    Fique por dentro das ultimas notícias do mundo da tecnologia.
+                </p>
+        </div>
+    </div>
+</main>
+<%- include('../common/footer') %>
