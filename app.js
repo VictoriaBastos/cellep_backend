@@ -8,7 +8,7 @@
 // criar pasta admin home e noticias dentro da views(para melhor organizar as pastas web)
 // Criar pasta public para assets, arquivos de montagem da página (CSS,JS(lado do cliente) e Imagens)
 
-const app = require('./config/server')
+const app = require('./config/server') // ./ procura a pasta do arquivo desde a raiz
 // metodo get (endereço da rota, function req,res )
 // cria rota home, o '/' siginifica endereço puro, sempre leva pra home.
 app.get('/',(req,res) => {
