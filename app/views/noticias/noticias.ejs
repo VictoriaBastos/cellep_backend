@@ -1,5 +1,3 @@
-<!-- inclui arquivos comuns da pasta common-->
-
 <%- include('../common/head') %>
 <%- include('../common/menu') %>
 
@@ -11,11 +9,7 @@
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-30">
 
-<!-- recupeção dos arquivos de um json através do express -->
-<!-- com o < % % > o ejs identifica a presença de javascript no html -->
                 <% noticias.forEach(noticia => { %>
-                    <!-- código javascript e no meio código html. É preciso iniciar e fechar todas as linha javascript com conteúdo html no meio-->
-                    
                     <div class="col">
                         <div class="card shadow-sm">
                             <div class="card-body">
@@ -26,7 +20,6 @@
                                         <%= noticia.data_criacao.toLocaleString('pt-br').split(' ').join(' às ') %></small>
                                     </small>
                                 </p>
-                                <!-- ?id= traz um elemento pela sua id até o href -->
                                 <a href="/noticia?id=<%=noticia.id_noticia%>" class="btn btn-primary">Saiba Mais</a>
                             </div>
                             
