@@ -83,7 +83,7 @@ app.get('/admin/sair',function(req,res){
         res.redirect('/admin')
     })
 })
-
-app.listen(3000,()=>{ 
+// porta 3000 é usada para testes. No heroku definimos outra porta (abaixo).
+app.listen(process.env.PORT || 3000,()=>{ 
     console.log('Servidor rodando com o express')
 })
