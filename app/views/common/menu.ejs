@@ -9,6 +9,12 @@
                 <li><a id="menuHome" class="nav-link text-white" href="/">Home</a></li>
                 <li><a id="menuNoticias" class="nav-link text-white"  href="/noticias">Notícias</a></li>
                 <li><a id="menuAdmin" class="nav-link text-white" href="/admin">Admin</a></li>
+                <li>
+                    <% if(typeof(autorizado) !== 'undefined'){ %>
+                        <a href="/admin/sair" class="nav-link text-white">Sair</a>
+                    <% } %>
+                    
+                </li>
             </ul>
         </div>
         <div>

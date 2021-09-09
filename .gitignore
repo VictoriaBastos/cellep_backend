@@ -1,1 +1,4 @@
+# / -> indica pasta. *.session.sql (qualquer arquivo com essa extensão é ignorado)
 /node_modules
+/.vscode
+Heroku.session.sql

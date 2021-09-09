@@ -8,18 +8,20 @@
         </div>
     </div>
     <div class="container">
-        <form action="">
+        <!-- action é o caminho onde as informações do formulário são salvas. -->
+        <form action="/admin/salvar-noticia" method="POST">
+            <!--  méotod post coloca informações no corpo do arquivo de envio, não sendo visível para o usuário-->
             <div class="mb-3">
                 <label for="" class="form-label">
                     Nova Notícia
                 </label>
-                <input type="text" class="form-control" placeholder="Título da Notícia" required>
+                <input type="text" class="form-control" placeholder="Título da Notícia" name = "titulo" required>
             </div>
             <div class="mb-3">
                 <label for="conteudo">
                     Conteúdo
                 </label>
-                <textarea name="" id="conteudo" cols="30" rows="10" class="form-control" required></textarea>
+                <textarea name="" id="conteudo" cols="30" rows="10" class="form-control" name = "conteudo" required></textarea>
                 </textarea>
                 </div>
             </div>
